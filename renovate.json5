@@ -1,0 +1,18 @@
+{
+  //"extends": ["github>ladzaretti/mc-compare:mc"],
+  "extends": ["github>whitesource/merge-confidence:beta"],
+  "packageRules":[
+    {
+      "matchConfidence": ["high","very high"],
+      "groupName": "high merge confidence dependencies"
+    },
+    {
+      "matchConfidence": ["neutral"],
+      "groupName": "neutral merge confidence dependencies"
+    },
+   {
+      "matchConfidence": ["low"],
+      "groupName": "low merge confidence dependencies"
+    }
+  ]
+}
